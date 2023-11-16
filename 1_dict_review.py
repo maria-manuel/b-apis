@@ -146,6 +146,12 @@ print('Challenge 4 -------------')
 #]
 #print(phone_numbers)
 
+phone_numbers = [
+    user['position']['org']
+    for user in results['users']
+]
+print(phone_numbers)
+
 
 print('Challenge 5 -------------')
 # Challenge 5:
