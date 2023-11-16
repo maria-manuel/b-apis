@@ -99,7 +99,7 @@ results = {
 print(results['users'][0]['name'])
 
 # 2. Print the name of 'Mary Bucket'
-# print(results)
+print(results['users'][3]['name'])
 
 # 3. Print the phone number of 'Father Kimmy Santiago'
 # print(results)
