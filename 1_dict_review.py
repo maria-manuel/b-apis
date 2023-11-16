@@ -111,8 +111,9 @@ print(results['users'][2]['personal']['bio'])
 print('Challenge 2 -------------')
 # Challenge 2:
 # Write a for-loop to print all the email addresses in the list.
-
-
+users_list = results['users']
+for user in users_list:
+    print(user['contact']['email'])
 
 
 print('Challenge 3 -------------')
