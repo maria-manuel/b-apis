@@ -102,7 +102,7 @@ print(results['users'][0]['name'])
 print(results['users'][3]['name'])
 
 # 3. Print the phone number of 'Father Kimmy Santiago'
-# print(results)
+print(results['users'][1]['contact']['phone'])
 
 # 4. Print the bio of Dame Daniel Eathorse
 # print(results)
