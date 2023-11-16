@@ -121,7 +121,13 @@ print('Challenge 3 -------------')
 # Write a for-loop to sum the total account 'total' values for all users and
 # print the result. Repeat for 'withdrawn'.
 
-
+sum_total = 0
+sum_withdrawn = 0
+for user in results['users']:
+    sum_total += user['account']['total']
+    sum_withdrawn += user['account']['withdrawn']
+print('sum total', sum_total)
+print('sum withdrawn', sum_withdrawn)
 
 
 print('Challenge 4 -------------')
