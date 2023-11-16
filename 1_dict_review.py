@@ -147,7 +147,7 @@ print('Challenge 4 -------------')
 #print(phone_numbers)
 
 phone_numbers = [
-    user['position']['org']
+    user['contact']['phone']
     for user in results['users']
 ]
 print(phone_numbers)
@@ -168,7 +168,6 @@ print('Challenge 5 -------------')
 #    if user['account']['total'] > 70000
 #}
 #print(orgs)
-
 
 print('-------------')
 # Bonus Challenge 1:
