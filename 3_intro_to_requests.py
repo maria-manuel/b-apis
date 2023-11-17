@@ -20,15 +20,12 @@ print('------------ Challenge 1')
 
 
 
-#import requests
-#response = requests.get('https://en.wikipedia.org/wiki/Main_Page')
-#html_code = response.text
-#for line in html_code.splitlines():
-#    if '<title>' in line:
-#        print(line)
-
-
-
+import requests
+response = requests.get('https://en.wikipedia.org/wiki/Main_Page')
+html_code = response.text
+for line in html_code.splitlines():
+   if '<title>' in line:
+       print(line)
 
 
 print('------------ Challenge 2')
