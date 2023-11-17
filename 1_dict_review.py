@@ -187,7 +187,6 @@ print('-------------')
 
 
 
-
 # Bonus Challenge 2:
 # 1. Try repeating your solution Bonus Challenge 1, but omitting the [] around
 # the list comprehension. It will still work. Can you explain why?
