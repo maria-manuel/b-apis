@@ -48,8 +48,17 @@ print('------------ Challenge 3')
 # Can use Challenge 2 as a guide, and write code to display ALL the lines of
 # source code that displays the "On this day" section of the homepage?
 
+in_section = False
 
+for line in html_code.splitlines():
+    if 'On this day' in line:
+       in_section = True
 
+    if in_section:
+       print(line)
+    
+    if 'By email' in line:
+       in_section = False
 
 
 print('------------ Challenge 4')
