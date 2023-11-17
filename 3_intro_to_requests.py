@@ -38,7 +38,9 @@ print('------------ Challenge 2')
 # think too hard about this), and print out the line of code that contains
 # that.
 
-
+for line in html_code.splitlines():
+   if 'Odaenathus' in line:
+       print(line)
 
 
 print('------------ Challenge 3')
