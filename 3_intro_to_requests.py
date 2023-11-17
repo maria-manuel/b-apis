@@ -67,10 +67,21 @@ print('------------ Challenge 4')
 # and only show text before outputting it?
 # Hint: Simplest way:  re.sub(r'<.*?>', '', line)
 
+import re
 
+in_section = False
 
+for line in html_code.splitlines():
+    if 'On this day' in line:
+      in_section = True
 
+    if in_section:
+       cleaned_line = re.sub('<[^<]+?>', '', line)
+       print(cleaned_line)
 
+    if 'By email' in line:
+       in_section = False
+        
 
 print('------------')
 # Bonus Challenge
