@@ -1,9 +1,13 @@
+
+
 # NOTE: With APIs, you are "at the whim" of the API provider, which means they
 # can be shut down or changed with little warning. If you encounter such a
 # problem with an API in this activity, be sure to let an instructor know!
 
 
 import requests
+
+print('requests marathon')
 
 print('------------ Challenge 1')
 # Challenge 1
@@ -13,8 +17,9 @@ print('------------ Challenge 1')
 # it running.
 
 
-response = requests.get('https://ghibliapi.herokuapp.com/films/')
-data = response.json()
+# response = requests.get('https://ghibliapi.herokuapp.com/films/')
+# data = response.json()
+
 # print(data)
 
 print('------------ Challenge 2')
