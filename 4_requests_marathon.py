@@ -33,8 +33,9 @@ print('------------ Challenge 2')
 #    print(item['title'])
 
 for item in data:
-    print(item['release_date'])
-    print(item['title'])
+    if item['title'] == "My Neighbor Totoro":
+        print(item['title'])
+        print(item['release_date'])
 
 
 print('------------ Challenge 3')
