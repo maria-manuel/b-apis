@@ -32,9 +32,9 @@ print('------------ Challenge 2')
 #for item in data:
 #    print(item['title'])
 
-# Uncomment this code to get going.
-#for item in data:
-#    print(item['title'])
+for item in data:
+    print(item['release_date'])
+    print(item['title'])
 
 
 print('------------ Challenge 3')
