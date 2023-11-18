@@ -1,5 +1,4 @@
 
-
 # NOTE: With APIs, you are "at the whim" of the API provider, which means they
 # can be shut down or changed with little warning. If you encounter such a
 # problem with an API in this activity, be sure to let an instructor know!
@@ -16,11 +15,13 @@ print('------------ Challenge 1')
 # information about their films. Uncomment the print statement, and get
 # it running.
 
-
 # response = requests.get('https://ghibliapi.herokuapp.com/films/')
 # data = response.json()
-
 # print(data)
+
+response = requests.get('https://api.domainsdb.info/v1/domains/search?domain=ycombinator.com')
+data = response.json()
+print(data)
 
 print('------------ Challenge 2')
 # Challenge 2
@@ -31,6 +32,9 @@ print('------------ Challenge 2')
 #for item in data:
 #    print(item['title'])
 
+# for item in data:
+#     print(item['title'])
+#     print(item['release date'])
 
 
 print('------------ Challenge 3')
