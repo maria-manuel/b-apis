@@ -6,8 +6,6 @@
 
 import requests
 
-print('requests marathon')
-
 print('------------ Challenge 1')
 # Challenge 1
 # Examine the following code. Can you understand what it is doing? As a
@@ -15,11 +13,13 @@ print('------------ Challenge 1')
 # information about their films. Uncomment the print statement, and get
 # it running.
 
+##Outdated web address
+
 # response = requests.get('https://ghibliapi.herokuapp.com/films/')
 # data = response.json()
-# print(data)
+# # print(data)
 
-response = requests.get('https://api.domainsdb.info/v1/domains/search?domain=ycombinator.com')
+response = requests.get('https://ghibliapi.vercel.app/films')
 data = response.json()
 print(data)
 
@@ -32,9 +32,9 @@ print('------------ Challenge 2')
 #for item in data:
 #    print(item['title'])
 
-# for item in data:
-#     print(item['title'])
-#     print(item['release date'])
+# Uncomment this code to get going.
+#for item in data:
+#    print(item['title'])
 
 
 print('------------ Challenge 3')
