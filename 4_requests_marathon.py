@@ -13,7 +13,7 @@ print('------------ Challenge 1')
 # information about their films. Uncomment the print statement, and get
 # it running.
 
-##Outdated web address
+##Outdated web address/API
 
 # response = requests.get('https://ghibliapi.herokuapp.com/films/')
 # data = response.json()
@@ -49,6 +49,19 @@ print('------------ Challenge 3')
 # 2. How many USD does one EUR buy today.
 # 3. How many GPB does one EUR buy on the last day of 2015: 2015-12-31
 
+response = requests.get('https://api.exchangeratesapi.io/latest')
+data = response.json()
+
+rates_dict = data['rates']
+for key, value in rates_dict.items():
+    print(key, value)
+
+print('US dollars for 1 EUR', rates_dict['USD'])
+response = requests.get('https://api.exchangeratesapi.io/2015-12-31?base=USD')
+data = response.json()
+
+rates_dict = data['rates']
+print('Euros for 1 USD', rates_dict)['EUR']
 
 
 print('------------ Challenge 4')
